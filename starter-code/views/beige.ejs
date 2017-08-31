@@ -1,0 +1,14 @@
+<h2> Beige Colors </h2>
+
+<ul>
+
+  <% listOfColors.forEach((oneColor) => { %>
+    <% if (oneColor.category === 'beige') { %>
+    <li>
+    <div class="div" style="background-color: <%= oneColor.hex %> ;" ></div>
+    <p> <%= oneColor.keyword %> </p>
+    <p> <%= oneColor.hex %> </p>
+    </li>
+  <% } %>
+<% }); %>
+</ul>
